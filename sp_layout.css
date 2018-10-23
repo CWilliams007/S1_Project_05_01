@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 1
+   
+   Layout styles for Slate and Pencil Tutoring
+   Author: Chad Williams
+   Date: 10.23.18
+
+   Filename: sp_layout.css
+
+*/
+
+/* Window and Body Styles */
+/* Step 3&4 sets browser window height to 100% of clients screen, sets width to 95% of clients screen within a range of 640 to 960 px*/
+html {
+    height: 100%;
+    width: 95%;
+    min-width: 640px;
+    max-width: 960px;
+    min-height: 100%;
+}
+
+
+
+/* Row Styles */
+/* Step 6 affecting all elements with the class of row */
+.row {
+    float: none;
+}
+
+/* Page Header Styles */
+
+
+
+
+
+
+/* Horizontal Navigation List Styles */
+
+
+
+
+/* Topics Styles */
+
+
+
+
+
+
+/* HR Styles */
+
+
+
+
+/* Customer Comment Styles */
+
+
+
+/* Footer Styles */
+
+/* Border Box, Delete when finished */
+header,
+ul,
+nav,
+li,
+a {
+    border: 1px solid red;
+}
