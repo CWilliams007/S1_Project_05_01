@@ -17,55 +17,136 @@
 /* Step 3&4 sets browser window height to 100% of clients screen, sets width to 95% of clients screen within a range of 640 to 960 px*/
 html {
     height: 100%;
+    min-height: 100%;
+}
+
+body {
     width: 95%;
     min-width: 640px;
     max-width: 960px;
     min-height: 100%;
+    margin: auto auto;
 }
 
 
 
 /* Row Styles */
 /* Step 6 affecting all elements with the class of row */
-.row {
-    float: none;
+.row::after {
+    clear: both;
+    content: "";
+    display: table;
 }
 
 /* Page Header Styles */
+/* Step 7 Header image is displayed 70% of the header margin, and floated on left side of the page */
+header img {
+    width: 70%;
+    display: block;
+    float: left;
+}
 
+/* Step 8, floats header nav to the left, sets padding of left and right to 2% of header, width 30% of header. */
+header nav {
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 26%;
+}
 
+/* Step 9, displays all hypertext links in the header nav as blocks and 100% wide as the header margins */
+header nav a {
+    display: block;
+    width: 100%;
+}
 
 
 
 
 /* Horizontal Navigation List Styles */
-
+/* Step 10, affects the horizontal navigation displaying the items in block form each with a width of 12.5% of the nav */
+.horizontal li {
+    display: block;
+    width: 12.5%;
+    float: left;
+}
 
 
 
 /* Topics Styles */
+/* Step 11, displays all unlisted items with the id attribute of topics as blocks with a width of 20% of the content box floating left of the page and sets right margin to 1.5% of the content box. */
+ul#topics li {
+    display: block;
+    width: 20%;
+    float: left;
+    margin: 0px 0px 0px 1.5%;
+}
 
+/* Step 12, targets the first unlisted item element with the id attribute of topics to have a left-margin of 7.75% of the content box. */
+ul#topics li:first-of-type {
+    margin-left: 7.75%;
+}
 
+ul#topics li:last-of-type {
+    margin-right: 7.75%;
+}
 
+/* Step 13, targets images inside of Topics and displays them as blocks, width 50% of content box, and centers them in the content box. */
+ul#topics li img {
+    display: block;
+    width: 50%;
+    margin: auto auto;
+}
 
 
 
 /* HR Styles */
-
-
-
+/* Step 14, changes the default browsers display of horizontal rules to half of their normal display width. */
+hr {
+    width: 50%;
+}
 
 /* Customer Comment Styles */
+/* Step 15 centers comments and affects width of the content box*/
+ul#comments {
+    width: 75%;
+    margin: 40px auto;
+}
 
+/* Step 16, affects comments, floating them left and spacing them */
+ul#comments li {
+    display: block;
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+}
 
+/* Step 17 places user comment images on the left of their comments  */
+ul#comments li img {
+    display: block;
+    width: 20%;
+    margin: 0px 5%;
+    float: left;
+}
+
+/* Step 18 customer paragraphs in comments are affected and floated left of their content box with a width of 70% of it. */
+ul#comments li p {
+    float: left;
+    width: 70%;
+}
 
 /* Footer Styles */
+/* Step 19 puts the footer below the comments by forcing it to clear any content before rendering. */
+footer {
+    clear: both;
+}
 
-/* Border Box, Delete when finished */
-header,
+
+/* Border Box, Comment out when Finished*/
+/* header,
 ul,
 nav,
 li,
 a {
     border: 1px solid red;
-}
+} */
